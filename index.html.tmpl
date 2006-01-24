@@ -24,22 +24,24 @@
 <title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="generator" content="<TMPL_VAR generator>">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="grepicon.png" type="image/png">
 <link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 1.0' href='
 http://planet.grep.be/rss10.xml'>
 <link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 2.0' href='
 http://planet.grep.be/rss20.xml'>
-<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div id='head'>
-<div class='titel'><TMPL_VAR name></div>
-<div class="subtitel">Planet'ing Belgian FLOSS people</div>
-<div class="maintain">Planet Grep is maintained by <a href='mailto:wouter@grep.be'>Wouter Verhelst</a>. All times are in UTC.</div>
-<div id="geel">&nbsp;</div>
-<div id="zwart">&nbsp;</div>
-<div id="rood">&nbsp;</div>
-<div id="headshadow">&nbsp;</div>
+  <div class='titel'><TMPL_VAR name></div>
+  <div class="subtitel">Planet'ing Belgian FLOSS people</div>
+  <div class="maintain">Planet Grep is maintained by <a href='mailto:wouter@grep.be'>Wouter Verhelst</a>. All times are in UTC.</div>
+  <div id="geel">&nbsp;</div>
+  <div id="zwart">&nbsp;</div>
+  <div id="rood">&nbsp;</div>
+  <div id="headline">&nbsp;</div>
+  <div id="headshadow">&nbsp;</div>
 </div>
 <div id='headspacer'>&nbsp;</div>
 
@@ -68,7 +70,7 @@ href='foafroll.xml'>FOAF</a>, and <a href='opml.xml'>OPML</a>.</p>
 
 ### The other loop is the Items loop, which will get iterated for each
 ### news item.
-
+<div id="content">
 <TMPL_LOOP Items>
 
 ### Visually distinguish articles from different days by checking for
@@ -97,7 +99,7 @@ href='foafroll.xml'>FOAF</a>, and <a href='opml.xml'>OPML</a>.</p>
 <em><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF creator>by <TMPL_VAR creator> at </TMPL_IF><TMPL_VAR date></a></em>
 </p>
 </TMPL_LOOP>
-
+</div>
 <hr>
 <p class="footer">
 <a href="http://www.planetplanet.org/">Powered by Planet!</a><br>
