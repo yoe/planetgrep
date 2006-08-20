@@ -3,15 +3,40 @@ body {
 	padding: 0;
 	color: #333;
 }
+
 p, h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	padding-bottom: 5px;	
+	border-bottom: 1px solid  #333;
+}
+
+.subscriptions h2 {
+	border: none;
 }
 
 p {
 	margin-top: 0.5ex;
 }
 
+hr {
+	height: 1px;
+	margin: 20px 20px 0 20px;
+	border: none;
+	color: #999;
+	background-color: #999;	
+}
+
+/* Containers */
+#content {
+	margin: 0 20px;
+	width: 67%;
+}
+
+/* Links */
 a:link {
 	color: #000;
 	text-decoration: none;
@@ -37,9 +62,12 @@ a:hover {
 	height: 30pt;
 }*/
 
+/* Content of post */
+
 .date {
 	margin: 20px 0 10px 0;
 }
+
 .caption {
 	background-color: #FFD600;
 	margin-top: 0px;
@@ -51,75 +79,54 @@ a:hover {
 }
 
 .author_name {
-	border-top: 1px dotted #CCC;
 	margin: 0;
 	padding: 5px 10px;
 	font-size: 120%;
-}
-
-.article_title {
-	margin: 15px 0 10px 10px;
-}
-.article_title a {
-	color: #000;
-	text-decoration: none;
-}
-.article_title a:visited {
-	color: #666;;
-}
-.article_title a:hover {
-	color: black;
-	text-decoration: underline;
-}
-.article {
-	margin-left: 11px;
-	font-size: 90%;
 }
 
 .author_name a {
 	text-decoration: none;
 	color: #C60000;
 }
+
 .author_name a:visited {
 	color: #C60000;
 }
+
 .author_name a:hover {
 	text-decoration: none;
 	color: #FF0000;
 }
 
-.subscriptions {
-	width: 25%;
-	margin: 0 10px 0 20px;
-	float: right;
-	background-color: #f1f1f5;
-	padding: 5px;
-	border: 1px solid #CCC;
-	font-size: 0.8em;
-	color: #333;
+.article_title {
+	margin: 15px 0 10px 10px;
 }
 
-.subscriptions ul {
-	padding-left: 15px;
-}
-.subscriptions ul a:link, ul a:visited {
-	color: #666;
+.article_title a {
+	color: #000;
 	text-decoration: none;
 }
-.subscriptions ul a:hover {
-	color: #CC0000;
+
+.article_title a:visited {
+	color: #666;;
+}
+
+.article_title a:hover {
+	color: black;
 	text-decoration: underline;
 }
 
-#content {
-	margin: 0 20px;
-	width: 67%;
+.article {
+	margin-left: 11px;
+	font-size: 90%;
 }
 
 .article_footer {
 	text-align: right;
 	font-size: 70%;
 	margin-top: 5px;
+	border-bottom: 1px solid #CECECE;
+	
 }
 .article_footer a:link {
 	text-decoration: none;
@@ -134,10 +141,40 @@ a:hover {
 	color: #999;
 }
 
+.subscriptions {
+	width: 25%;
+	margin: 0 10px 0 20px;
+	float: right;
+	background-color: #F9F9F9;
+	padding: 5px;
+	border: 1px solid #CECECE;
+	font-size: 0.8em;
+	color: #333;
+}
+
+.subscriptions ul {
+	padding-left: 15px;
+	list-style-type: square;
+}
+
+.subscriptions ul a:link, ul a:visited {
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.subscriptions ul a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+/* Header */
+
 #head {
 	width: 100%;	
 	height: 105px;
 }	
+
 #zwart {
 	position: absolute;
 	left: 0;
@@ -146,6 +183,7 @@ a:hover {
 	top: 0;
 	background-color: #000;
 }
+
 #geel {
 	position: absolute;
 	left:33%;
@@ -154,6 +192,7 @@ a:hover {
 	top: 0;
 	background-color: #FFD600;
 }
+
 #rood {
 	position: absolute;
 	left: 67%;
@@ -162,6 +201,7 @@ a:hover {
 	top: 0;
 	background-color: #C60000;
 }
+
 .titel {
 	position: absolute;
 	top: 5px;
@@ -179,7 +219,8 @@ a:hover {
 	font-size: 1em;
 	z-index: 1;
 }
-.maintain {
+
+.maintained {
 	position: absolute;
 	top: 80px;
 	left: 20px;
@@ -187,14 +228,18 @@ a:hover {
 	font-size: 0.7em;
 	z-index: 1;
 }
-.maintain a:link, .maintain a:visited {
+
+.maintained a:link, .maintained a:visited {
 	color: #FFF;
 	text-decoration: underline;
 }
-.maintain a:hover {
+
+.maintained a:hover {
 	color: #CCC;
 	text-decoration: none;
 }
+
+/*
 #headline {
 	position: absolute;
 	width: 100%;
@@ -202,14 +247,30 @@ a:hover {
 	top: 100px;
 	background-color: #666;
 }
+*/
+
 #headshadow {
 	position: absolute;
 	width: 100%;
 	height: 5px;
-	top: 101px;
+	top: 100px;
 	background-color: #CECECE;
+	background-image: url("shadow.png");
+	
 }
 #headspacer {
 	top: 0;
 	height: 10px;
+}
+
+.hackergotchi {
+	float: right;
+}
+
+/* Footer */
+
+.footer {
+	padding-left: 20px;	
+	color: #999;
+	font-size: .8em;
 }
