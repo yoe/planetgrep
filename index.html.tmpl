@@ -55,7 +55,7 @@
 <h2>Subscriptions</h2>
 <ul>
 <TMPL_LOOP Channels>
-<li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a> <a href="<TMPL_VAR uri ESCAPE="HTML">">(feed)</a></li>
+<li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a> <a href="<TMPL_VAR url ESCAPE="HTML">">(feed)</a></li>
 </TMPL_LOOP>
 </ul>
 <p>Planet Grep is open to all people who either have the Belgian
@@ -99,7 +99,7 @@ href='mailto:aeon@pandora.be'>Gregory</a></p>
 <TMPL_VAR content>
 </div>
 <p class="article_footer">
-<em><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF creator>by <TMPL_VAR creator> at </TMPL_IF><TMPL_VAR date></a></em>
+<em><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF author>by <TMPL_VAR author> at </TMPL_IF><TMPL_VAR date><TMPL_IF category> under <TMPL_VAR category></TMPL_IF></a></em>
 </p>
 </TMPL_LOOP>
 </div>
