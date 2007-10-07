@@ -1,7 +1,9 @@
 body {
+	color: #333;
+	font-family: "DejaVu Sans", "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+	font-size: .80em;	
 	margin: 0;
 	padding: 0;
-	color: #333;
 }
 
 img {
@@ -10,7 +12,7 @@ img {
 }
 
 p, h1, h2, h3, h4 {
-	margin: 0;
+	margin: 1em 0;
 	padding: 0;
 }
 
@@ -28,11 +30,11 @@ p {
 }
 
 hr {
-	height: 1px;
-	margin: 20px 20px 0 20px;
+	background-color: #999;
 	border: none;
 	color: #999;
-	background-color: #999;	
+	height: 1px;
+	margin: 20px 20px 0 20px;
 }
 
 /* Containers */
