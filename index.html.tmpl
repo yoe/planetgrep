@@ -24,7 +24,7 @@
 <title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="generator" content="<TMPL_VAR generator>">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" type="text/css">
 <link rel="icon" href="grepicon.png" type="image/png">
 <link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 1.0' href='http://planet.grep.be/rss10.xml'>
 <link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 2.0' href='http://planet.grep.be/rss20.xml'>
@@ -58,16 +58,10 @@
 <li><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a> <a href="<TMPL_VAR url ESCAPE="HTML">">(feed)</a></li>
 </TMPL_LOOP>
 </ul>
-<p>Planet Grep is open to all people who either have the Belgian
-nationality or live in Belgium, and who actively work with or contribute
-to Open Source/Free software.</p>
-<p>Other planets can be found at the <a
-href='http://www.planet-index.org'>Planet Index</a>.</p>
-<p>A complete feed is available in a number of syndication formats: <a
-href='rss10.xml'>RSS 1.0</a>, <a href='rss20.xml'>RSS 2.0</a>, <a
-href='foafroll.xml'>FOAF</a>, and <a href='opml.xml'>OPML</a>.</p>
-<p>The layout of this site was done by <a
-href='mailto:aeon@pandora.be'>Gregory</a></p>
+<p>Planet Grep is open to all people who either have the Belgian nationality or live in Belgium, and who actively work with or contribute to Open Source/Free software.</p>
+<p>Other planets can be found at the <a href='http://www.planet-index.org'>Planet Index</a>.</p>
+<p>A complete feed is available in a number of syndication formats: <a href='rss10.xml'>RSS 1.0</a>, <a href='rss20.xml'>RSS 2.0</a>, <a href='foafroll.xml'>FOAF</a>, and <a href='opml.xml'>OPML</a>.</p>
+<p>The layout of this site was done by <a href='mailto:aeon@pandora.be'>Gregory</a></p>
 </div>
 
 ### The other loop is the Items loop, which will get iterated for each
@@ -88,7 +82,7 @@ href='mailto:aeon@pandora.be'>Gregory</a></p>
 
 <TMPL_IF new_channel>
 <TMPL_IF channel_hackergochi_link>
-<div class="hackergotchi"><img src='<TMPL_VAR channel_hackergochi_link>'></div>
+<div class="hackergotchi"><img src='<TMPL_VAR channel_hackergochi_link>' alt=''></div>
 </TMPL_IF>
 <h3 class="author_name"><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">"><TMPL_VAR channel_name></a></h3>
 </TMPL_IF>
