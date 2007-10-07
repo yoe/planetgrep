@@ -45,17 +45,16 @@ hr {
 /* Links */
 a:link {
 	color: #000;
-	text-decoration: none;
-	font-weight: bold;
+	text-decoration: underline;
 }
 a:visited {
-	color: #333;
-	text-decoration: none;
+	color: #666;
+	text-decoration: underline;
 	font-weight: bold;
 }
 a:hover {
 	color: #C60000;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*h1 {
