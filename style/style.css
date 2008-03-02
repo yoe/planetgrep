@@ -15,6 +15,15 @@ p, h1, h2, h3, h4 {
 	padding: 0;
 }
 
+h1 {
+	background-color: #EEE;
+	color: #333;
+	margin-bottom: .5em;
+	padding: .2em 0;
+	padding-left: .2em;
+	font-size: 1.4em;
+}
+
 h2 {
 	padding-bottom: 5px;	
 	border-bottom: 1px solid  #333;
@@ -42,6 +51,10 @@ hr {
 	width: 67%;
 }
 
+#content-about {
+	margin: 0 20px;
+}
+
 /* Links */
 a:link {
 	color: #000;
@@ -55,16 +68,6 @@ a:hover {
 	color: #C60000;
 	text-decoration: none;
 }
-
-/*h1 {
-	background-color: black;
-	color: white;
-	margin-bottom: 0px;
-	padding-bottom: 10px;
-	padding-left: 20pt;
-	font-size: 30pt;
-	height: 30pt;
-}*/
 
 /* Content of post */
 
