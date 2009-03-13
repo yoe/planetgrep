@@ -154,7 +154,7 @@ a:hover {
 	background-color: #F9F9F9;
 	padding: 5px;
 	border: 1px solid #CECECE;
-	font-size: 0.8em;
+	font-size: .8em;
 	color: #333;
 }
 
@@ -172,6 +172,16 @@ a:hover {
 .subscriptions ul a:hover {
 	color: #CC0000;
 	text-decoration: underline;
+}
+
+.left {
+	float: left;
+	margin-right: 5px;
+}
+
+.right {
+	float: right;
+	margin-left: 5px;
 }
 
 /* Header */
