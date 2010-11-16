@@ -26,10 +26,12 @@ h1 {
 h2 {
 	padding-bottom: 5px;	
 	border-bottom: 1px solid  #333;
+	text-shadow: 1px 1px 5px #CCC;
 }
 
 .subscriptions h2 {
 	border: none;
+	margin: 5px 0;
 }
 
 p {
@@ -131,7 +133,7 @@ a:hover {
 	text-align: right;
 	font-size: 70%;
 	margin-top: 5px;
-	border-bottom: 1px solid #CECECE;
+	border-bottom: 1px dotted #EEE;
 	
 }
 .article_footer a:link {
@@ -149,11 +151,11 @@ a:hover {
 
 .subscriptions {
 	width: 25%;
-	margin: 0 10px 0 20px;
+	margin: 5px 20px;
 	float: right;
 	background-color: #F9F9F9;
 	padding: 5px;
-	border: 1px solid #CECECE;
+	border: 1px solid #EEE;
 	font-size: .8em;
 	color: #333;
 }
@@ -270,7 +272,7 @@ a:hover {
 	width: 100%;
 	height: 5px;
 	top: 100px;
-	background-color: #CECECE;
+	background-color: #EEE;
 	background-image: url("shadow.png");
 	
 }
