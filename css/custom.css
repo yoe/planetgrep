@@ -1,0 +1,268 @@
+body {
+	background: #f9f9f9;
+	font-family: "DejaVu Sans", sans-serif;
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a:link {
+	color: #004370;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #222;
+}
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+	margin: 4% 0 8% 0;
+}
+
+header small {
+	color: #999;
+}
+
+.flag {
+	width: 100%;
+	box-shadow: 0 0 20px #ccc;
+}
+
+.black {
+	background-color: #000;
+	float: left;
+	height: 10px;
+	width: 33%;
+}
+
+.yellow {
+	background-color: #ffd600;
+	float: left;
+	height: 10px;
+	width: 34%;
+}
+
+.red {
+	background-color: #c60000;
+	float: left;
+	height: 10px;
+	width: 33%;
+}
+
+
+/* Main Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+	font-size: 4.8rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2.4rem;
+	margin: 0;
+}
+
+h3,
+h4 {
+	margin: 4% 0 2% 0;
+}
+
+small {
+	color: #999;
+	font-size: 1.2rem;
+}
+
+blockquote {
+	border-left: 5px solid #e6e6e6;
+	color: #666;
+	margin-left: 2rem;
+	padding-left: 2rem;
+}
+
+img {
+	border: none;
+}
+
+article img {
+	height: auto;
+	max-width: 100%;
+}
+
+pre {
+	background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+	padding: 0.5rem;
+}
+
+code {
+	font-size: 1.4rem;
+	padding: 0.2rem;
+}
+
+h2.main_title {
+	color: #004370;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.blog_post {
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	margin: 2rem 0;
+	padding: 2rem;
+}
+
+.blog_post h1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 2rem 0 1rem 0;
+}
+
+.blog_post h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+.blog_post h3,
+.blog_post h4 {
+	font-size: 1.6rem;
+	margin: 1rem 0;
+}
+
+.blog_post a:hover {
+	color: #0077c7;
+}
+
+.hackergotchi {
+	text-align: right;
+}
+
+@media (max-width: 550px) {
+	.hackergotchi {
+		margin-bottom: 1rem;
+		text-align: left;
+	}
+}
+
+.hackergotchi img {
+	height: auto;
+	max-width: 100%;
+}
+
+h3.author_name {
+	font-size: 1.6rem;
+	margin: 0 0 10px 0;
+}
+
+h3.author_name a {
+	color: #004370;
+	text-decoration: none;
+}
+
+h3.author_name a:hover {
+	color: #222;
+	text-decoration: underline;
+}
+
+h4.article_title {
+	font-size: 2.4rem;
+	font-weight: normal;
+	margin: 1rem 0 2rem 0;
+}
+
+h4.article_title a {
+	color: #0077c7;
+	text-decoration: none;
+}
+
+h4.article_title a:hover {
+	text-decoration: underline;
+}
+
+.article_footer {
+	margin-top: 10px;
+}
+
+.article_footer a {
+	text-decoration: none;
+	color: #999;
+}
+
+.article_footer a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+
+.button a {
+	text-decoration: none;
+}
+
+.yarpp-related-rss {
+	color: #666;
+	font-size: 1.4rem;
+	line-height: 150%;
+}
+
+.yarpp-related-rss p {
+	margin-bottom: 1rem;
+}
+
+.feedflare {
+	display: none;
+}
+
+
+/* Sidebar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+aside hr {
+	margin: 2rem 0;
+}
+
+.about,
+.subscriptions {
+	font-size: 1.2rem;
+	line-height: 150%;
+}
+
+.about h4,
+.subscriptions h4 {
+	color: #004370;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.about ul,
+.subscriptions ul {
+	padding-left: 1.5rem;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+	color: #999;
+	margin: 2rem 0;
+}
+
+footer hr {
+	margin: 1rem 0;
+}
+
+hr {
+	background-color: #ccc;
+	border: none;
+	color: #ccc;
+	height: 1px;
+	margin: 4% 0 2% 0;
+}

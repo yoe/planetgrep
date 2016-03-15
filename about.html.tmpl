@@ -1,36 +1,74 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-  <head>
-    <title>About Planet Grep</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="icon" href="grepicon.png" type="image/png">
+<!DOCTYPE html>
+<html lang="en">
+
+### Planet HTML template.
+
+### This is intended to demonstrate and document Planet's templating facilities, and at the same time provide a good base for you to modify into your own design.
+### The output's a bit boring though, if you're after less documentation and more instant gratification, there's an example with a much prettier output in the fancy-examples/ directory of the Planet source.
+
+### Lines like this are comments, and are automatically removed by the templating engine before processing.
+
+### Planet makes a large number of variables available for your templates.
+### See INSTALL for the complete list. The raw value can be placed in your output file using <TMPL_VAR varname>. We'll put the name of our Planet in the page title and again in an h1.
+
+	<head>
+		<meta charset="utf-8">
+		<title>About <TMPL_VAR name> - <TMPL_VAR name> - Planet'ing Belgian FLOSS people</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 1.0' href='http://planet.grep.be/rss10.xml'>
 		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 2.0' href='http://planet.grep.be/rss20.xml'>
 	</head>
+
   <body>
-		<div id='head'>
-			<div class='titel'>Planet Grep</div>
-			<div class="subtitel">Planet'ing Belgian FLOSS people</div>
-			<div class="maintained">Planet Grep is maintained by <a href='mailto:wouter+planet@grep.be'>Wouter Verhelst</a>. All times are in UTC.</div>
-			<div id="geel">&nbsp;</div>
-			<div id="zwart">&nbsp;</div>
-			<div id="rood">&nbsp;</div>
-			<div id="headline">&nbsp;</div>
-			<div id="headshadow">&nbsp;</div>
+		<div class="flag">
+			<div class="row">
+				<div class="black"><!-- Empty --></div>
+				<div class="yellow"><!-- Empty --></div>
+				<div class="red"><!-- Empty --></div>
+			</div>
 		</div>
-		<div id='headspacer'>&nbsp;</div>
-		<div id="content-about">
-    <h1>About Planet Grep</h1>
-    <p>Planet Grep is the Belgian Free/Open Source <a href="http://www.planetplanet.org">planet</a>. A 'planet' is a website that aggregates blogs into a 'stream of news' type	of site. There are many such planets that aggregate many	different blog collections; an overview is given at <a href="http://www.planet-index.org">the Planet-index</a>, in case you want another.</p>
-		<p>Planet Grep is maintained by Wouter Verhelst, and runs on a server hosted by <a href='http://www.nixsys.be'>NixSys BVBA</a>.</p>
-		<p>In adding blog feeds to the planet, we currently follow the following set of guidelines:</p>
-			<ul>
-				<li>A planet is a website to promote a <em>community</em>, rather than a technology or some such. Therefore, it should be clear that Planet Grep is a website about <em>people</em> involved in Free and Open Source software, rather than Free and Open Source software <em>itself</em>. As a result, Planet Grep is open to people who 'work with or participate to free and open source software', which is not necessarily the same thing as 'people who <em>write about</em> free and open source software' (although it may be).</li>
-				<li>Also welcome are RSS feeds for FLOSS community events, like FOSDEM or LOADays. We define "FLOSS community event" as any event that has FLOSS as its main topic and is not commercial in nature.</li>
-				<li>Planet Grep is not a 'tomorrow's newspaper headers' item on the late night radio news; rather, it should be a fully-functional webpage with good content that can be read independently. Therefore, Planet Grep prefers not to run blog feeds that contain only so-called 'teasers'. That's not to say you can't have an occasional teaser on your blog and still be on Planet Grep; but the <em>default</em> should be to have no teasers, rather than the other way around.</li>
-			</ul>
-			<p>If you want to add your blog to Planet Grep, the preferred way is to send a pull request for the <a href='https://github.com/yoe/planetgrep'>configuration repository</a>. Alternatively, if you can't figure it out, just mail <a href='mailto:wouter+planet@grep.be'>wouter</a>.</p>
-			<p><a href="javascript:history.go(-1);">< Back</a></p>
+		<div class="container">
+			<header>
+				<div class="row">
+	      	<div class="twelve columns">
+						<h1><TMPL_VAR name></h1>
+						<h2>Planet'ing Belgian FLOSS people</h2>
+						<small>Planet Grep is maintained by <a href="mailto:wouter+planet@grep.be">Wouter Verhelst</a>. All times are in UTC.</small>
+	      	</div>
+				</div>
+			</header>
+			<main>
+				<div class="row">
+					<div class="twelve columns">
+						<article>
+							<h2 class="main_title">About Planet Grep</h2>
+							<p>Planet Grep is the Belgian Free/Libre and Open-source <a href="http://www.planetplanet.org">planet</a>. A 'planet' is a website that aggregates blogs into a 'stream of news' type	of site. There are many such planets that aggregate many	different blog collections; an overview is given at <a href="http://www.planet-index.org">Planet Index</a>.</p>
+							<p>To add a blog feed, we currently follow the following set of guidelines:</p>
+							<ul>
+								<li>A planet is a website to promote a <em>community</em>, rather than a technology or some such. Therefore, it should be clear that Planet Grep is a website about <em>people</em> involved in Free/Libre and Open-source software, rather than Free/Libre and Open-source software <em>itself</em>. As a result, Planet Grep is open to people who 'work with or participate to Free/Libre and Open-source software', which is not necessarily the same thing as 'people who <em>write about</em> Free/Libre and Open-source software' (although it may be).</li>
+								<li>Also welcome are RSS feeds for FLOSS community events, like FOSDEM or LOADays. We define "FLOSS community event" as any event that has FLOSS as its main topic and is not commercial in nature.</li>
+								<li>Planet Grep is not a 'tomorrow's newspaper headers' item on the late night radio news; rather, it should be a fully-functional webpage with good content that can be read independently. Therefore, Planet Grep prefers not to run blog feeds that contain only so-called 'teasers'. That's not to say you can't have an occasional teaser on your blog and still be on Planet Grep; but the <em>default</em> should be to have no teasers, rather than the other way around.</li>
+							</ul>
+							<p>If you want to add your blog to Planet Grep send a pull request to the <a href='https://github.com/yoe/planetgrep'>repository</a>. If you can't figure it out, send an email to <a href='mailto:wouter+planet@grep.be'>Wouter Verhelst</a>.</p>
+							<p>Planet Grep is maintained by Wouter Verhelst, and runs on a server hosted by <a href='http://www.nixsys.be'>NixSys</a>.</p>
+							<a href="index.html" class="button">Back</a>
+						</article>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<div class="row">
+					<div class="twelve columns">
+						<hr>
+						<small><TMPL_VAR name> was last updated at <TMPL_VAR date> by <TMPL_VAR generator></small>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
