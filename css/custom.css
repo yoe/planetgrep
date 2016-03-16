@@ -25,10 +25,6 @@ header {
 	margin: 4% 0 8% 0;
 }
 
-header small {
-	color: #999;
-}
-
 .flag {
 	width: 100%;
 	box-shadow: 0 0 20px #ccc;
@@ -81,6 +77,7 @@ small {
 blockquote {
 	border-left: 5px solid #e6e6e6;
 	color: #666;
+	font-style: italic;
 	margin-left: 2rem;
 	padding-left: 2rem;
 }
@@ -89,9 +86,8 @@ img {
 	border: none;
 }
 
-article img {
-	height: auto;
-	max-width: 100%;
+code {
+	white-space: pre-wrap;
 }
 
 pre {
@@ -103,15 +99,8 @@ pre {
 	padding: 0.5rem;
 }
 
-code {
-	font-size: 1.4rem;
-	padding: 0.2rem;
-}
-
-h2.main_title {
-	color: #004370;
-	font-weight: bold;
-	margin-bottom: 1.5rem;
+table {
+	width: 100%;
 }
 
 .blog_post {
@@ -123,7 +112,7 @@ h2.main_title {
 }
 
 .blog_post h1 {
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: bold;
 	margin: 2rem 0 1rem 0;
 }
@@ -134,14 +123,28 @@ h2.main_title {
 	margin: 1rem 0;
 }
 
-.blog_post h3,
-.blog_post h4 {
-	font-size: 1.6rem;
-	margin: 1rem 0;
+.blog_post img {
+	height: auto;
+	max-width: 100%;
 }
 
 .blog_post a:hover {
 	color: #0077c7;
+}
+
+.author_name {
+	font-size: 1.6rem;
+	margin: 0 0 10px 0;
+}
+
+.author_name a {
+	color: #004370;
+	text-decoration: none;
+}
+
+.author_name a:hover {
+	color: #222;
+	text-decoration: underline;
 }
 
 .hackergotchi {
@@ -160,38 +163,30 @@ h2.main_title {
 	max-width: 100%;
 }
 
-h3.author_name {
-	font-size: 1.6rem;
-	margin: 0 0 10px 0;
-}
-
-h3.author_name a {
+.main_title {
 	color: #004370;
-	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
 }
 
-h3.author_name a:hover {
-	color: #222;
-	text-decoration: underline;
-}
-
-h4.article_title {
+.article_title {
 	font-size: 2.4rem;
 	font-weight: normal;
 	margin: 1rem 0 2rem 0;
 }
 
-h4.article_title a {
+.article_title a {
 	color: #0077c7;
 	text-decoration: none;
 }
 
-h4.article_title a:hover {
+.article_title a:hover {
 	text-decoration: underline;
 }
 
 .article_footer {
-	margin-top: 10px;
+	font-size: 1.2rem;
+	margin: 0;
 }
 
 .article_footer a {
@@ -206,6 +201,16 @@ h4.article_title a:hover {
 
 .button a {
 	text-decoration: none;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 2rem;
+}
+
+.alignright {
+	float: right;
+	margin-left: 2rem;
 }
 
 .yarpp-related-rss {
@@ -239,12 +244,12 @@ aside hr {
 .subscriptions h4 {
 	color: #004370;
 	font-size: 1.6rem;
-	font-weight: bold;
 }
 
 .about ul,
 .subscriptions ul {
-	padding-left: 1.5rem;
+	list-style: none;
+	padding-left: 0;
 }
 
 
