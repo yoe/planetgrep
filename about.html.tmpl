@@ -15,13 +15,14 @@
 		<meta charset="utf-8">
 		<title>About <TMPL_VAR name> - <TMPL_VAR name> - Planet'ing Belgian FLOSS people</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="<TMPL_VAR generator>">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/skeleton.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<link rel="icon" type="image/png" href="favicon.png">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 1.0' href='http://planet.grep.be/rss10.xml'>
-		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 2.0' href='http://planet.grep.be/rss20.xml'>
+		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 1.0' href='rss10.xml'>
+		<link rel='alternate' type='application/rss+xml' title='Planet Grep - RSS 2.0' href='rss20.xml'>
 	</head>
 
   <body>
@@ -56,7 +57,7 @@
 							</ul>
 							<p>If you want to add your blog to Planet Grep send a pull request to the <a href='https://github.com/yoe/planetgrep'>repository</a>. If you can't figure it out, send an email to <a href='mailto:wouter+planet@grep.be'>Wouter Verhelst</a>.</p>
 							<p>Planet Grep is maintained by Wouter Verhelst, and runs on a server hosted by <a href='http://www.nixsys.be'>NixSys</a>.</p>
-							<a href="index.html" class="button">Back</a>
+							<a href="http://planet.grep.be" class="button">Back</a>
 						</article>
 					</div>
 				</div>
@@ -65,7 +66,7 @@
 				<div class="row">
 					<div class="twelve columns">
 						<hr>
-						<small><TMPL_VAR name> was last updated at <TMPL_VAR date> by <TMPL_VAR generator></small>
+						<small><TMPL_VAR name> was last updated at <TMPL_VAR date></small>
 					</div>
 				</div>
 			</footer>
